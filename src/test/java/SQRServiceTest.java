@@ -8,11 +8,24 @@ public class SQRServiceTest {
     public void test() {
         SQRService service = new SQRService();
 
-        int expected = 6;
-        int actual = service.range(200, 400);
+        int actual = service.range(200, 300);
+        int expected = 3;
 
         Assertions.assertEquals(expected, actual);
 
 
     }
+
+    @Test
+    public void test1() {
+        SQRService service = new SQRService();
+
+        int actual = service.range(200, 400);
+        int expected = 6;
+
+        Assertions.assertEquals(expected, actual);
+
+
+    }
+
 }
